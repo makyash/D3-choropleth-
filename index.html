@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+ <head>
+ 	
+	<style>
+	.legendThreshold{
+		font-family: sans-serif;
+		font-size: 13px;
+	}	
+	h1{
+		font-size: 20px;
+		font-family: sans-serif;
+	}
+	h2{
+		font-size: 20px;
+		font-family: sans-serif;
+	}
+	.svg {
+		background: #F8F8F8;
+	}
+	.state{
+	  stroke: #333;
+	  stroke-width: 0.5;
+	  fill : #fff2e6;
+
+	}
+	.selected{
+	  fill : #ADFF2F;
+	}
+	.country{
+	  fill :none;
+	  stroke: #fff;
+	  stroke-width: 0.5;
+	}
+	.obese-label{
+	  font-size:10px;
+	  font-family: sans-serif;
+	}
+	.obese-name{
+	  font-size:10px;
+	  font-family: sans-serif;
+	}
+	.button {
+		border-radius: 12px;}
+	</style>
+
+ 
+ </head>
+ <body>
+ 	<h1> Yashkumar Makwana</h1>
+ 	<h2>Obesity Rate (Map-Choropleth Visualization)</h2> 
+ 	<button onclick="mapviz()" class="button ">MAP visual</button>
+ 	<button onclick="choropleth()" class="button">Choropleth</button>
+ 	<button onclick="reset()" class="button">Reset</button>
+ 	
+
+	<div id = "map"></div>
+	<!-- <svg width = 600 height = 960></svg> -->
+	<script src="https://d3js.org/d3.v4.min.js"></script>
+	<script src="https://d3js.org/topojson.v2.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.24.0/d3-legend.js"></script>
+
+	<script src= "main.js"></script>
+
+ </body>
+ 
+ 
+</html>
